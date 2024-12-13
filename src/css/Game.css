@@ -65,7 +65,7 @@
 }
 
 .back {
-    background-image: url('/src/scripts/image/back.png');
+    background-image: url("https://hanso667.github.io/JogoDaMemoria/src/scripts/image/back.png");
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
