@@ -1,0 +1,82 @@
+.EasyDeck,.NormalDeck,.HardDeck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 140vh;
+    background-image: radial-gradient( #fad48f, #e0b565);
+    box-shadow: 0 0 0 1vh #e0b565;
+    border: 1vh solid #fa8932;
+    gap: 5vh;
+    font-size: 5vh;
+    text-decoration: underline 0.5vh;
+}
+
+.HardGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 150px);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.NormalGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.EasyGrid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 150px);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.Card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.front {
+    background-size: cover;
+    background-position: center;
+    transform: (185deg);
+}
+
+.back {
+    background-image: url('./src/scripts/img/back.png');
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(185deg);
+}
+
+.disabled-card {
+    transition: 1s;
+    filter: saturate(0);
+    opacity: 0.5;
+}

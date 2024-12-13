@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/start.css">
+    <link rel="stylesheet" href="src/css/Game.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria</title>
+</head> 
+<body> 
+
+    <main id="Start" style="display: flex;">
+
+        <div class="Screen">
+            <img src="src/scripts/image/brain.png" draggable="false" width="150px">
+            <input class="NameInput" id="UserName" type="text" maxlength="10"></input>
+            <button id="btnStart" onclick="setName(), start()" style="display: flex;">Start</button>
+
+        </div>
+
+    </main>
+
+    <main id="Settings" style="display: none;">
+
+        <div class="Screen">
+
+            <button id="btnEasy" onclick="SetDiff('easy'), loadGameEasy(), startTime()">Easy</button>
+
+            <button id="btnNormal" onclick="SetDiff('normal'), loadGameNormal(), startTime()">Normal</button>
+
+            <button id="btnHard" onclick="SetDiff('hard'), loadGameHard(), startTime()">Hard</button>
+
+        </div>
+
+    </main>
+
+    <div class="LeaderBoard" id="leaderBoard">
+
+        <p>LeaderBoard</p>
+
+        <table>
+
+            <tr >
+
+                <th id="First"></th>
+
+            </tr>
+
+            <tr >
+
+                <th id="Second"></th>
+
+            </tr>
+
+            <tr >
+
+                <th id="Third"></th>
+
+            </tr>
+            <tr >
+
+                <th id="Fourth"></th>
+
+            </tr>
+            <tr >
+
+                <th id="Fifth"></th>
+
+            </tr>
+            <tr >
+
+                <th id="Sixth"></th>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <main id="EasyDeck" style="display: none;">
+
+        <div class="EasyDeck" >
+
+            <div><span class="counter" id="counter">0</span><span>/30</span></div>
+
+                <div class="EasyGrid">
+                </div>
+
+        </div>
+
+    </main>
+
+    <main id="NormalDeck" style="display: none;">
+
+        <div class="NormalDeck" >
+
+            <div><span class="counter" id="counter">0</span><span>/20</span></div>
+
+                <div class="NormalGrid">
+                </div>
+
+        </div>
+
+    </main>
+
+    <main id="HardDeck" style="display: none;">
+
+        <div class="HardDeck" >
+
+            <div><span class="counter" id="counter">0</span><span>/20</span></div>
+
+                <div class="HardGrid">
+                </div>
+
+        </div>
+
+    </main>
+
+</body> 
+<div class="Scripts">
+<script src="src/scripts/script.js"></script>
+<script src="src/scripts/game.js"></script>
+</div>
+</html> 

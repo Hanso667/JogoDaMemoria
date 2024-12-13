@@ -1,0 +1,171 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#007997, #004D61);
+}
+
+.Screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 50vh;
+    width: 50vh;
+    background-image: radial-gradient( #fad48f, #e0b565);
+    box-shadow: 0 0 0 1vh #e0b565;
+    border: 1vh solid #fa8932;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.LeaderBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-left: 40vh;
+    height: 50vh;
+    width: 40vh;
+    background-image: radial-gradient( #fad48f, #e0b565);
+    box-shadow: 0 0 0 1vh #e0b565;
+    border: 1vh solid #fa8932;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 3vh;
+
+}
+
+.LeaderBoard p {
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.LeaderBoard th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 35vh;
+    border: none;
+    border-radius: 1vh;
+    margin: 5px;
+    background-color: #e19f41;
+    box-shadow: -4px 5px 0px #c0832e;
+    font-size: 2vh;
+    color: black;
+}
+
+.Screen button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 20vh;
+    font-size: 3vh;
+    background-color: #e19f41;
+    font-family: "Press Start 2P", system-ui;
+    border-radius: 2vh;
+    border: solid black;
+}
+.Screen button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#UserName {
+    text-align: center;
+    width: 40vh;
+    height: 5vh;
+    font-size: 4vh;
+    font-family: "Press Start 2P", system-ui;
+    border-radius: 2vh;
+    border: none;
+}
+
+#btnEasy {
+    width: 30vh;
+    height: 10vh;
+    box-shadow: -5px 5px 2px #eca94a;
+    background-image: linear-gradient(rgb(86, 158, 86), rgb(39, 102, 39));
+    color: black;
+}
+
+#btnEasy:hover {
+    transform: translatey(-10%);
+    box-shadow: -5px 10px 4px #eca94a;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(39, 102, 39), rgb(86, 158, 86));
+    color: white;
+}
+
+#btnNormal {
+    width: 30vh;
+    height: 10vh;
+    box-shadow: -5px 5px 2px #eca94a;
+    background-image: linear-gradient(rgb(238, 238, 114), rgb(124, 124, 46));
+    color: black;
+}
+
+#btnNormal:hover {
+    transform: translatey(-10%);
+    box-shadow: -5px 10px 4px #eca94a;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(124, 124, 46), rgb(238, 238, 114));
+    color: white;
+}
+
+#btnHard {
+    width: 30vh;
+    height: 10vh;
+    box-shadow: -5px 5px 2px #eca94a;
+    background-image: linear-gradient(rgb(207, 78, 78), rgb(116, 48, 48));
+    color: black;
+}
+
+#btnHard:hover {
+    transform: translatey(-10%);
+    box-shadow: -5px 10px 4px #eca94a;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(116, 48, 48), rgb(207, 78, 78));
+    color: white;
+}
+
+#First {
+    background-color: gold;
+}
+
+#Second {
+    background-color: silver;
+}
+
+#Third {
+    background-color: chocolate;
+}
+
+@media only screen and (max-width: 950px) {
+    .LeaderBoard{
+        margin-left: 20vh;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .LeaderBoard{
+        margin-left: 10vh;
+    }
+}
+@media only screen and (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+    .LeaderBoard{
+        margin-top: 10vh;
+        margin-left: 0;
+    }
+}
