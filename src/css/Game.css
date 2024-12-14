@@ -1,11 +1,13 @@
-.EasyDeck,.NormalDeck,.HardDeck {
+.EasyDeck,
+.NormalDeck,
+.HardDeck {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
     width: 140vh;
-    background-image: radial-gradient( #fad48f, #e0b565);
+    background-image: radial-gradient(#fad48f, #e0b565);
     box-shadow: 0 0 0 1vh #e0b565;
     border: 1vh solid #fa8932;
     gap: 5vh;
@@ -65,7 +67,7 @@
 }
 
 .back {
-    background-image: url("https://hanso667.github.io/JogoDaMemoria/src/scripts/image/back.png");
+    background-image: url('https://hanso667.github.io/JogoDaMemoria/src/scripts/image/back.png');
     background-size: cover;
     background-position: center;
     backface-visibility: hidden;
@@ -79,4 +81,59 @@
     transition: 1s;
     filter: saturate(0);
     opacity: 0.5;
+}
+
+@media only screen and (max-width:800px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 600px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(5, 100px);
+    }
+
+}
+@media only screen and (max-width:650px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 500px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(5, 75px);
+    }
+
+}
+@media only screen and (max-width:525px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 400px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(4, 75px);
+    }
+
+}
+@media only screen and (max-width:425px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 300px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(3, 70px);
+    }
+
+}
+@media only screen and (max-width:325px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 250px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(3, 60px);
+    }
+
+}
+@media only screen and (max-width:270px) {
+    .HardDeck, .EasyDeck, .NormalDeck{
+        width: 200px;
+    }
+    .EasyGrid, .NormalGrid, .HardGrid {
+        grid-template-columns: repeat(3, 50px);
+    }
+
 }
