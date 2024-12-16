@@ -164,27 +164,42 @@ button:hover {
     body {
         flex-direction: column;
     }
+    .Screen{
+        height: 40vh;
+        width: 40vh;
+        margin-top: 5vh;
+    }
     .LeaderBoard{
-        margin-top: 10vh;
+        height: 50vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         margin-left: 0;
     }
 }
 @media only screen and (max-width:450px) {
     .Screen{
+        height: 40vh;
         width: 40vh;
-        margin-top: 20vh;
+        margin-top: 5vh;
     }
     .LeaderBoard{
-        margin-bottom: 20vh;
+        height: 50vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 0;
     }
 }
 @media only screen and (max-width:300px) {
     .Screen{
-        margin-top: 20vh;
+        height: 40vh;
         width: 40vh;
+        margin-top: 5vh;
     }
     .LeaderBoard{
-        margin-bottom: 20vh;
+        height: 50vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 0;
     }
     #UserName{
         width: 35vh;
