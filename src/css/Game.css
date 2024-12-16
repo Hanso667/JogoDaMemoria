@@ -84,56 +84,156 @@
 }
 
 @media only screen and (max-width:800px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
+
+    .HardDeck,
+    .EasyDeck,
+    .NormalDeck {
         width: 600px;
     }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(5, 100px);
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 150px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 100px);
     }
 
 }
+
 @media only screen and (max-width:650px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
-        width: 500px;
+
+    .HardDeck{
+        width: 600px;
+        height: 700px;
     }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(5, 75px);
+    .EasyDeck,
+    .NormalDeck {
+        width: 600px;
+        height: 400px;
+    }
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 100px);
     }
 
 }
+
 @media only screen and (max-width:525px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
-        width: 400px;
-    }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(4, 75px);
-    }
 
-}
-@media only screen and (max-width:425px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
+    .HardDeck{
         width: 300px;
+        height: 575px;
     }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(3, 70px);
+
+    .EasyDeck{
+        width: 250px;
+        height: 350px;
+    }
+
+    .NormalDeck {
+        width: 350px;
+        height: 350px;
+    }
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 80px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 80px);
     }
 
 }
+
+@media only screen and (max-width:425px) {
+
+    .HardDeck{
+        width: 300px;
+        height: 575px;
+    }
+    .EasyDeck,
+    .NormalDeck {
+        width: 300px;
+        height: 350px;
+    }
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 80px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+}
+
 @media only screen and (max-width:325px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
+
+    .HardDeck{
+        width: 300px;
+        height: 575px;
+    }
+    .EasyDeck,
+    .NormalDeck {
         width: 250px;
     }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(3, 60px);
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 80px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 80px);
     }
 
 }
+
 @media only screen and (max-width:270px) {
-    .HardDeck, .EasyDeck, .NormalDeck{
+
+    .HardDeck{
+        width: 300px;
+        height: 575px;
+    }
+    .EasyDeck,
+    .NormalDeck {
         width: 200px;
     }
-    .EasyGrid, .NormalGrid, .HardGrid {
-        grid-template-columns: repeat(3, 50px);
+
+    .EasyGrid {
+        grid-template-columns: repeat(2, 80px);
+    }
+
+    .NormalGrid {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .HardGrid {
+        grid-template-columns: repeat(3, 80px);
     }
 
 }

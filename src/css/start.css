@@ -169,16 +169,22 @@ button:hover {
         margin-left: 0;
     }
 }
-@media only screen and (max-width:425px) {
+@media only screen and (max-width:450px) {
     .Screen{
+        width: 40vh;
         margin-top: 20vh;
-        width: 45vh;
+    }
+    .LeaderBoard{
+        margin-bottom: 20vh;
     }
 }
 @media only screen and (max-width:300px) {
     .Screen{
         margin-top: 20vh;
         width: 40vh;
+    }
+    .LeaderBoard{
+        margin-bottom: 20vh;
     }
     #UserName{
         width: 35vh;
